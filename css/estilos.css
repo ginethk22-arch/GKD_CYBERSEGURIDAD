@@ -1,0 +1,836 @@
+/* Barra de navegación */
+.barra-superior {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px;
+  background-color: white; 
+  color: black;
+}
+
+/* Logotipo de barra de navegación*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo .nombre-empresa {
+  font-size: 18px;
+  font-weight: bold;
+  color: black; 
+}
+
+/* Menu de barra de navegación*/
+.navbar {
+  display: flex;
+  gap: 20px;
+  margin-left: -40px; 
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #5bd85b;
+}
+
+.navbar a.activo {
+  color: #5bd85b; 
+}
+
+/* Contacto de barra de navegación*/
+.contacto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contacto img {
+  height: 25px;
+  margin-right: 8px;
+}
+
+/* Teléfono de barra de navegación*/
+.contacto .telefono,
+.contacto .correo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacto .telefono div,
+.contacto .correo div {
+  display: flex;
+  flex-direction: column; 
+  line-height: 1.2;     
+}
+
+.contacto .titulo {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.contacto span {
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Correo de barra de navegación*/
+.correo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.correo img {
+  height: 45px;
+  margin-right: 5px;
+}
+.telefono img {
+  height: 35px;
+  margin-right: 5px;
+}
+.contacto .telefono,
+.contacto .correo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Botón de inicio de sesión de barra de navegación*/
+.btn-login {
+  border: 2px solid #5bd85b;
+  padding: 5px 15px;
+  color: #5bd85b;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-login:hover {
+  background-color: #5bd85b;
+  color: white;
+}
+
+/* Banner de inicio en sección INICIO*/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.btn-banner {
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: #c1ff72;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  top: 83%;
+  left: 28%;
+  padding: 16px 130px;
+}
+/*Tabla de ¿por que elegirnos? en sección INICIO*/
+.contenedor-tabla {
+  margin-top: 30px; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Encabezado de Tabla de ¿por que elegirnos? en sección INICIO*/
+th {
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  border: 2px solid black;
+  background-color: #ECEBEC;
+  color: black;
+}
+
+/* Celdas de Tabla de ¿por que elegirnos? en sección INICIO*/
+td {
+  padding: 12px;
+  border: 2px solid black;
+  vertical-align: top;
+  color: #666666;
+}
+
+/* Botón + y − de Tabla de ¿por que elegirnos? en sección INICIO */
+.toggle-btn {
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #666666;
+}
+
+/* Texto oculto de Tabla de ¿por que elegirnos? en sección INICIO */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #5C8C7C;
+}
+/*Barra de contacto inferior en sección de INICIO*/
+.barra-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.barra-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5bd85b;
+  color: #203454;
+  padding: 20px 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.compartimiento {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Línea divisoria gris de barra de contacto inferior en sección de INICIO */
+.compartimiento:not(:last-child) {
+  border-right: 3px solid #666666;
+  height: 500%;
+}
+
+.compartimiento img {
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-arriba {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+}
+
+.texto-abajo {
+  font-size: 14px;
+  color: #1a1a1a;
+  text-align: center;
+}
+/*Menu de servicios en sección SERVICIOS*/
+.servicios {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.servicios h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.tarjeta {
+  background: #f1f1f1;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 6px solid #5bd85b;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.tarjeta img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.tarjeta p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/*Barra inferior de sección SERVICIOS*/
+.formulario-footer {
+  background: #5bd85b;
+  padding: 3px 40px;
+  color: white;
+  margin-top: 30px;
+}
+
+.contenedor-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Formulario de Barra inferior de sección SERVICIOS*/
+.formulario h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.formulario p {
+  margin-bottom: 15px;
+}
+
+.formulario form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 220px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background: #0d1b2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #1a2e45;
+}
+
+/* Información legal de Barra inferior de sección SERVICIOS */
+.footer-legal {
+  text-align: right;
+  font-size: 14px;
+}
+
+.footer-legal a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+.contenedor-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  min-height: 160px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.formulario,
+.footer-legal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.formulario { align-items: flex-start; }
+.footer-legal { align-items: flex-end; text-align: right; }
+
+.formulario h3,
+.formulario p,
+.footer-legal p {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.formulario form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formulario input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  min-width: 220px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background: #0d1b2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contenedor-form-footer {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    gap: 20px;
+  }
+
+  .formulario, .footer-legal {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-legal { align-items: center; }
+  .formulario form { flex-direction: column; align-items: center; }
+}
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #666666;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/*Ruta de navegación en detalle de productos en SERVICIOS*/
+.rutadenavegacion {
+  font-size: 18px;
+  margin: 15px 60px;
+  color: #555;
+}
+
+.rutadenavegacion a {
+  text-decoration: none;
+  color: #666666;
+  padding: 0 5px;
+}
+
+.rutadenavegacion a:hover {
+  color: #5bd85b;
+  text-decoration: underline;
+}
+
+.rutadenavegacion span {
+  color: #333;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Contenedor del propducto en sección SERVICIOS*/
+.producto-contenedor {
+  display: grid;
+  grid-template-columns: 250px 1fr 180px;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #fff;
+}
+
+/* Imagen del producto en sección Servicios */
+.producto-imagen img {
+  width: 140%;
+  max-width: 1400px;
+  border-radius: 8px;
+}
+
+.producto-texto {
+  flex: 1;
+  padding-left: 130px;
+}
+
+.producto-texto h1 {
+  font-size: 40px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.producto-texto .confianza {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5db85b;
+  margin-bottom: 8px;
+}
+
+.producto-texto .precio {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ef8e25;
+  margin-bottom: 20px;
+}
+
+.producto-texto .subtitulo {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #203454;
+}
+
+.producto-texto ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-type: "✔ ";
+  line-height: 1.6;
+}
+
+.producto-texto ul li {
+  margin-bottom: 8px;
+}
+
+/* Botón de asesoría en detalle de producto en sección SERVICIOS*/
+.boton-asesoria {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 29px;
+  background: linear-gradient(135deg, #5db85b, #3d9140);
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+  text-align: center;
+}
+
+.boton-asesoria:hover {
+  background: linear-gradient(135deg, #3d9140, #2d7030);
+  transform: scale(1.05);
+}
+
+/* Panel de aliados en detalle de producto en sección SERVICIOS */
+.producto-aliados h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a365a;
+  margin-bottom: 15px;
+}
+
+.producto-aliados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Logos de aliados en Panel de aliados en detalle de producto en sección SERVICIOS */
+.aliados-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.aliados-logos img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  background: #f5f5f5;
+  padding: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  filter: grayscale(60%);
+  transition: all 0.4s ease;
+}
+
+.aliados-logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: #ffffff;
+}
+
+/*Inicia sesión*/
+.login-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 1000px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Imagen de inicio de sesión */
+.login-imagen img {
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Formualrio de incio de sesión*/
+.login-formulario {
+  flex: 1;
+  max-width: 400px;
+}
+.login-formulario h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #5bd85b;
+}
+.login-formulario .descripcion {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/*  Cuadros de texto de inicia sesion */
+.login-formulario label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+.login-formulario input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+.login-formulario input:focus {
+  border-color: #5bd85b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26,54,90,0.3);
+}
+
+/* Botón de inicio de sesion*/
+.login-formulario .btn-login {
+  width: 100%;
+  padding: 12px;
+  background: #5bd85b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.login-formulario .btn-login:hover {
+  background: #5bd85b;
+  transform: translateY(-2px);
+}
+
+/* Links adicionales de barra inferior */
+.opciones-extra {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+.opciones-extra a {
+  color: #5bd85b;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.opciones-extra a:hover {
+  text-decoration: underline;
+}
+
+/* Textos legales barra inferior*/
+.formulario-footer {
+  background: #5bd85b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.footer-legal a {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+/*Sección nosotros*/
+.nosotros {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.nosotros h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.nosotros .intro {
+  text-align: justify;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Misión y Visión*/
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.card-mv {
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  background: #ecebec;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #5bd85b;
+}
+
+.card-mv:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card-mv h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #5bd85b;
+}
+
+.card-mv p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Servicios adicionales */
+.nosotros-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.nosotros-card {
+  background: #ecebec;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #5bd85b;
+}
+
+.nosotros-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.nosotros-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.nosotros-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.nosotros-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Banner en Nosotros*/
+.banner-quienes {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
