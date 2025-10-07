@@ -23,7 +23,7 @@ Incluye secciones informativas, formulario de asesoría, inicio de sesión y un 
 ```
 GKD_CYBERSEGURIDAD/
 │
-├── index.html
+├── Inicio.html
 ├── servicios.html
 ├── nosotros.html
 ├── iniciasesion.html
