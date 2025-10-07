@@ -1,0 +1,174 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 2px solid #5bd85b;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nombre-empresa {
+  font-weight: 800;
+  font-size: 20px;
+  color: #222;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #222;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #5bd85b;
+}
+
+.cerrar-sesion {
+  border: 2px solid #5bd85b;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.cerrar-sesion:hover {
+  background-color: #5bd85b;
+  color: white;
+}
+
+/* Contenedor CRUD */
+.crud-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.crud-container h1 {
+  text-align: center;
+  color: #5bd85b;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+/* Secciones */
+.crud-seccion {
+  margin-bottom: 40px;
+}
+
+.crud-seccion h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Formularios */
+form {
+  margin-top: 15px;
+}
+
+input[type="file"],
+input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botones */
+.btn-agregar {
+  background-color: #5bd85b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #48b648;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #5bd85b;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.acciones button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-editar {
+  background-color: #1e90ff;
+}
+
+.btn-editar:hover {
+  background-color: #156edc;
+}
+
+.btn-eliminar {
+  background-color: #ff4d4d;
+}
+
+.btn-eliminar:hover {
+  background-color: #e03b3b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+  border-top: 2px solid #5bd85b;
+}

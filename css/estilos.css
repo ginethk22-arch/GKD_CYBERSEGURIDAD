@@ -834,3 +834,199 @@ a {
   border-radius: 15px;
   margin-bottom: 30px;
 }
+
+/* --- Contenedor principal --- */
+.recuperar-container {
+  background: white;
+  width: 350px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* --- Título y texto --- */
+.recuperar-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recuperar-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* --- Formulario --- */
+.recuperar-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recuperar-container input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.recuperar-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.recuperar-container button:hover {
+  background-color: #0056b3;
+}
+
+/* --- Enlace volver --- */
+.recuperar-container .volver {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recuperar-container .volver:hover {
+  text-decoration: underline;
+}
+/* Contenedor principal */
+.asesoria-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #f8fbf8 0%, #eef8ee 100%);
+  flex-wrap: wrap;
+}
+
+/* Formulario */
+.asesoria-formulario {
+  flex: 1 1 500px;
+  max-width: 550px;
+  background-color: #ffffff;
+  padding: 45px 50px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.asesoria-formulario:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.asesoria-formulario h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0a1930;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #5bd85b;
+  box-shadow: 0 0 0 0.15rem rgba(91, 216, 91, 0.25);
+}
+
+/* Botón */
+.btn-enviar {
+  background-color: #5bd85b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #49b649;
+  transform: scale(1.02);
+}
+
+/* Imagen lateral */
+.asesoria-imagen {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.asesoria-imagen img {
+  width: 480px;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.asesoria-imagen img:hover {
+  transform: scale(1.03);
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+  text-align: center;
+  padding: 25px;
+}
+
+.mensaje-exito i {
+  color: #5bd85b;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.mensaje-exito h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .asesoria-contenedor {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .asesoria-formulario {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .asesoria-imagen img {
+    width: 100%;
+  }
+}

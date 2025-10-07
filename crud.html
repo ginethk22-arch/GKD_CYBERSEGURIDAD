@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración - GKD CyberSeguridad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/crud.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo GKD">
+      <span class="nombre-empresa">GKD CyberSeguridad</span>
+    </div>
+
+    <nav>
+      <a href="#" class="nav-falso">Inicio</a>
+      <a href="#" class="nav-falso">Servicios</a>
+      <a href="#" class="nav-falso">Nosotros</a>
+      <a href="#" id="agregar-contacto">Agregar Contacto</a>
+      <a href="Inicio.html" class="cerrar-sesion">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main class="crud-container">
+    <h1>Panel de Administración</h1>
+
+    <!-- Sección 1: Editar barra de navegación -->
+    <section class="crud-seccion">
+      <h2>Editar Barra de Navegación</h2>
+      <p>Agrega o elimina elementos del menú superior (solo visual).</p>
+
+      <ul id="lista-nav">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Nosotros</li>
+      </ul>
+
+      <form id="form-nav">
+        <input type="text" id="nuevoEnlace" placeholder="Nuevo enlace (ej: Blog)" required>
+        <button type="submit" class="btn-agregar">Agregar</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Sección 2: Cambiar Banner -->
+    <section class="crud-seccion">
+      <h2>Cambiar Banner Principal</h2>
+      <p>Puedes actualizar la imagen principal de la página de inicio.</p>
+
+      <form class="form-banner">
+        <label for="imagenBanner">Subir nueva imagen:</label>
+        <input type="file" id="imagenBanner" accept="image/*">
+        <button type="submit" class="btn-agregar">Actualizar Banner</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Sección 3: Editar Tabla “¿Por qué elegirnos?” -->
+    <section class="crud-seccion">
+      <h2>Editar Tabla “¿Por qué elegirnos?”</h2>
+      <p>Agrega, edita o elimina razones destacadas de nuestra empresa.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-elegirnos">
+          <tr>
+            <td>1</td>
+            <td>Experiencia Comprobada</td>
+            <td>Más de 10 años garantizando la seguridad digital.</td>
+            <td class="acciones">
+              <button class="btn-editar">Editar</button>
+              <button class="btn-eliminar">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Equipo Especializado</td>
+            <td>Profesionales certificados en ciberseguridad.</td>
+            <td class="acciones">
+              <button class="btn-editar">Editar</button>
+              <button class="btn-eliminar">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form id="form-agregar" class="form-agregar">
+        <input type="text" id="tituloNuevo" placeholder="Nuevo título" required>
+        <input type="text" id="descripcionNueva" placeholder="Nueva descripción" required>
+        <button type="submit" class="btn-agregar">Agregar Nuevo</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 GKD CyberSeguridad — Panel de Administración
+  </footer>
+
+  <script>
+    document.querySelectorAll(".nav-falso").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        alert("Este enlace está deshabilitado en el modo administración.");
+      });
+    });
+
+    document.getElementById("form-nav").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nuevo = document.getElementById("nuevoEnlace").value;
+      const lista = document.getElementById("lista-nav");
+      const li = document.createElement("li");
+      li.textContent = nuevo;
+      lista.appendChild(li);
+      document.getElementById("nuevoEnlace").value = "";
+      alert("Enlace agregado visualmente a la barra.");
+    });
+    document.getElementById("form-agregar").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const titulo = document.getElementById("tituloNuevo").value;
+      const descripcion = document.getElementById("descripcionNueva").value;
+      const tabla = document.getElementById("tabla-elegirnos");
+
+      const fila = document.createElement("tr");
+      fila.innerHTML = `
+        <td>${tabla.rows.length + 1}</td>
+        <td>${titulo}</td>
+        <td>${descripcion}</td>
+        <td class="acciones">
+          <button class="btn-editar">Editar</button>
+          <button class="btn-eliminar">Eliminar</button>
+        </td>
+      `;
+
+      tabla.appendChild(fila);
+      document.getElementById("form-agregar").reset();
+      alert("Elemento agregado correctamente");
+    });
+
+    document.querySelector(".form-banner").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("El banner ha sido actualizado exitosamente (simulación)");
+    });
+
+    document.getElementById("agregar-contacto").addEventListener("click", function(e) {
+      e.preventDefault();
+      alert("Aquí se abriría el formulario para agregar un nuevo contacto (simulación)");
+    });
+  </script>
+</body>
+</html>
