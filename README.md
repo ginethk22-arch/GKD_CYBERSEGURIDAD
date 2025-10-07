@@ -88,6 +88,6 @@ Este proyecto fue desarrollado con fines educativos y de demostración.
 
 ## Autor
 
-👩‍💻 **Gineth Katherine D.**  
+👩‍💻 **Gineth Karina Diaz Gonzalez.**  
 Desarrolladora Front-End & Especialista en Ciberseguridad  
 🔗 [GitHub](https://github.com/ginethk22-arch)
