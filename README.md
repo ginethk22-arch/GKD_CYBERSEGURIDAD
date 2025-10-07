@@ -71,7 +71,7 @@ GKD_CYBERSEGURIDAD/
 
 2. Abre el proyecto con tu editor (por ejemplo, Visual Studio Code).
 
-3. Ejecuta el sitio localmente con la extensión **Live Server** o abre `index.html` directamente en el navegador.
+3. Ejecuta el sitio localmente con la extensión **Live Server** o abre `Inicio.html` directamente en el navegador.
 
 4. Accede al panel administrativo:
    - Navega a `iniciasesion.html`
@@ -88,6 +88,6 @@ Este proyecto fue desarrollado con fines educativos y de demostración.
 
 ## Autor
 
-👩‍💻 **Gineth Katherine D.**  
+👩‍💻 **Gineth Karina Diaz Gonzalez.**  
 Desarrolladora Front-End & Especialista en Ciberseguridad  
 🔗 [GitHub](https://github.com/ginethk22-arch)
